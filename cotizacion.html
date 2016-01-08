@@ -36,8 +36,8 @@
               <li><a href="cotizacion.html">Cotización</a></li>
             </ul>
           </nav>
-          <form action="resultados-de-busqueda.html" class="search-container-menu">
-            <input id="search-box" type="text" name="q" placeholder="buscar medicamento" class="search-box">
+          <form action="resultados-de-busqueda.php" method="post" class="search-container-menu">
+            <input id="search-box" type="text" name="palabra_clave" placeholder="buscar medicamento" class="search-box">
             <label for="search-box"></label><span class="glyphicon glyphicon-search search-icon"></span>
             <input id="search-submit" type="submit" value="buscar">
           </form>
@@ -62,13 +62,13 @@
             Ud. puede realizar su cotización mediante este
             formulario web, el cual responderemos a la brevedad.
           </h4>
-          <form id="coti">
-            <input type="text" placeholder="Nombre y apellido">
-            <input type="text" placeholder="Domicilio">
-            <input type="text" placeholder="Ciudad">
-            <input type="text" placeholder="Mail">
-            <input type="text" placeholder="Teléfono">
-            <textarea placeholder="Cotización (Especificar marca, principio activo y cantidad):"></textarea>
+          <form action="procesar-cotizacion.php" method="post" id="coti">
+            <input type="text" name="nombre_apellido" placeholder="Nombre y apellido" required>
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <input type="text" name="ciudad" placeholder="Ciudad">
+            <input type="text" name="email" placeholder="Mail" required>
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <textarea name="cotizacion" placeholder="Cotización (Especificar marca, principio activo y cantidad):" required></textarea>
             <input type="submit" value="Enviar">
           </form>
         </div>
