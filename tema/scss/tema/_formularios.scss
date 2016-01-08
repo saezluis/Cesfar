@@ -1,0 +1,91 @@
+article.fondo{
+	form#coti{
+		width: 100%;
+		height: auto;
+		overflow:hidden;
+		margin-bottom: 1em;
+		
+		input[type="text"]{
+			width: 100%;
+			margin-bottom: 30px;
+			border:1px solid $color-1;
+			padding: 8px;
+		}
+
+		input[type="submit"]{
+			padding:10px;
+			background: $color-1;
+			color:$color-4;
+			border:none;
+			float: right;
+			margin-top: 20px;
+			@include desde (base){
+				width: 50%;
+			}
+			@include desde (movil){
+				width: 50%;
+			}
+		}
+
+		textarea{
+			width: 100%;
+			height: 120px;
+			border:1px solid $color-1;
+			padding:10px;
+		}
+
+	}
+
+	form#busqueda{
+		border:1px solid $color-1;
+		width: 80%;
+		margin: 0 auto;
+		background:#fff;
+		@include desde (base){
+			display: none;
+		}
+		@include desde (movil){
+			display: none;
+		}
+		@include desde (tablet){
+			display: block;
+			position: fixed;
+			width: 40%;
+			margin-top: 40px;
+			padding:30px;
+		}
+
+		@include desde (web){
+			width: 20%;
+		}
+		input[type="text"]{
+			border:1px solid $color-1;
+			padding:5px;
+			@include desde (tablet){
+				width: 100%;
+			}
+		}
+		input[type="submit"]{
+			background: $color-1;
+			padding:5px;
+			@include desde (tablet){
+				width: 100%;
+			    -webkit-appearance: none !important;
+			    -webkit-border-radius: 0px 0px 0px 0px !important;
+			    border:none;
+			    color:#fff;
+			    margin-top: 1em;
+			}
+		}
+	}
+
+	// p.resultado{
+		
+	// }
+
+}
+
+input[type=text], textarea, input[type=email], select, button {
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0px 0px 0px 0px !important;
+}

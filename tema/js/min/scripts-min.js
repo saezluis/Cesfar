@@ -1,0 +1,1 @@
+$(document).ready(function(){!function($){var n=$('<i class="fa fa-caret-right"></i>');$("nav#menu li:has(ul) > a").append(n),$("nav#menu li:has(ul)").on("click",function(){$(this).toggleClass("open")}),$("a#toggle").on("click",function(n){return $("html").toggleClass("open-menu"),!1}),$("div#overlay").on("click",function(){$("html").removeClass("open-menu")})}(jQuery)});

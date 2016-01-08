@@ -1,0 +1,15 @@
+#bar{
+	display: block;
+	height:30px;
+}
+header{
+	margin-top:20px;
+	@include desde(base){
+		text-align: center;
+	}
+	
+	form.search-container{
+		text-align:right;
+		margin:10px 0 15px 0;
+	}
+}

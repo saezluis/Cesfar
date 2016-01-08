@@ -1,0 +1,127 @@
+doctype html
+html(lang="cl")
+	head
+		title Cesfar
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1,maximun-scale=1")
+		link(rel="stylesheet", href="css/estilos.css")
+		link(rel="stylesheet", href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+		script(src="http://code.jquery.com/jquery-1.11.2.min.js")
+		script(src="tema/js/scripts.js")
+	body
+		#bar.grupo.total
+		header.grupo
+			.caja.base-100.web-30
+				#logo
+					a(href="index.html")
+						img(src="img/logo.png")
+			.caja.base-100.no-padding.web-70
+				#menu-iner
+					a#toggle.circulo(href='#')
+						i.fa.fa-bars
+					#overlay
+					nav#menu
+						ul
+							li
+								a(href='index.html') Quiénes Somos
+							li
+								a(href='#') Sucursales
+								ul
+									li
+										a.tit() Santiago
+									li
+										a(href='sucursales.html') Cesfar Infante
+									li
+										a(href='cesfar-uc.html') Cesfar UC
+									li
+										a(href='cesfar-providencia.html') Cesfar Providencia
+									li
+										a(href='cesfar-las-condes.html') Las Condes
+									li
+										a(href='cesfar-vitacura.html') Cesfar Vitacura
+									li
+										a.tit(href='cesfar-vina-del-mar.html') Viña del Mar
+									li
+										a.tit(href='cesfar-concepcion.html') Concepción
+
+							li
+								a(href='cotizacion.html') Cotización
+					form.search-container-menu(action='resultados-de-busqueda.html')
+						input#search-box.search-box(type='text', name='q' placeholder="buscar medicamento")
+						label(for='search-box')
+						span.glyphicon.glyphicon-search.search-icon
+						input#search-submit(type='submit' value="buscar")
+					.clear
+			.caja.base-100.no-padding
+				form.search-container(action='resultados-de-busqueda.html')
+					input#search-box.search-box(type='text', name='q' placeholder="buscar medicamento")
+					label(for='search-box')
+						span.glyphicon.glyphicon-search.search-icon
+					input#search-submit(type='submit' value="buscar")
+			#slide
+				img(src="img/banner-1.jpg", alt="")
+		#line
+
+		section.grupo
+			article.fondo
+				.caja.base-100.tablet-50.web-50
+					h1 Sucursales
+					h3.booo Cesfar Infante
+					p.qf Q.F. Constanza Hernández
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+						|sed risus id tortor dictum imperdiet nec et elit. Suspendisse potenti.
+						|Maecenas vitae urna turpis. Integer vitae mauris quis purus 
+						|elementum ullamcorper nec a est. Phasellus arcu nisl, congue ut 
+						|augue et, molestie auctor sapien.
+					h3 Servicios
+					ul.lista-servicios
+						li Atención Personalizada.
+						li Servicio de enfermería.
+						li Diversas formas de pago.
+						li Amplia variedad y stock de medicamentos.
+						li Contamos con envío de medicamentos a 
+							|diversas regiones del país.
+					.gmaps
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.360349635386!2d-70.62370434883259!3d-33.439917104264325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7fe05e5fbb%3A0x63a641804ebacbbb!2sJos%C3%A9+Manuel+Infante+927%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1444421079382', width='100%', height='100%', frameborder='0', style='border:0', allowfullscreen='')
+					.data-como-llegar
+						p AV. José Manuel Infante #927, Providencia.
+						p Lunes a Viernes 09:00 a 18:30, sábado 10:30-13:00
+						p.ttel Llámanos al 
+							a(href='tel:02 22099446') (02) 22099446
+						p.ttel Escríbenos a 
+							a(href='mailto:contacto@cesfar.cl') contacto@cesfar.cl
+						.tarjetas
+							img(src="img/credito.jpg", alt="Paga con estas tarjetas")
+
+				.caja.base-100.tablet-50.web-50.no-padding
+					#imagen--left--big
+						img(src="img/foto-tipo.jpg", alt="")
+		footer.total
+			.grupo.total
+				#f-arriba
+					#mini-logo.caja.base-35
+						.caja.base-50.web-30.hd-50.no-padding
+						.caja.base-50.web-70.hd-50.no-padding
+							img(src="img/mini-logo.png", alt="")
+						
+					#color-l.caja.base-65.no-padding
+							p.dire-mobil  AV. José Manuel Infante #927, Providencia.
+
+							p.tel-mobil 
+								a(href='tel:02 22099446') (02) 22099446
+							p.mail-mail 
+								a(href='mailto:contacto@cesfar.cl', target='_top') contacto@cesfar.cl
+				#f-abajo-verde
+				#f-abajo
+					#logo-cesfar-mini
+						.caja.base-100
+							p.bottom-logo © Cesfar 2015
+						.caja.base-100
+							p Casa Matriz
+							p.dire-mobil  AV. José Manuel Infante #927, Providencia.
+							p.tel-mobil 
+								a(href='tel:02 22099446') (02) 22099446
+							p.mail-mail 
+								a(href='mailto:contacto@cesfar.cl', target='_top') contacto@cesfar.cl
+
+

@@ -1,0 +1,427 @@
+#menu-iner{
+    width: 100%;
+    // @include desde (tablet){
+    //     width: 100%;
+    //     margin: 0 auto;
+    // }
+    position:relative;
+    margin-top: 15px;
+}
+
+a { text-decoration: none; }
+
+div#overlay { display: none; }
+
+a#toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: $color-1;
+  text-align: center;
+  color: white;
+  display: none;
+  transition: all ease-out 0.3s;
+}
+
+.circulo{
+      border-radius:100%;
+}
+
+a#toggle i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main#content { padding: 10px; }
+
+#menu {
+  text-align: left;
+  transition: all ease-out 0.3s;
+
+}
+
+#menu a { color: white; }
+
+#menu ul {
+  margin: 0;
+  padding: 5px 0;
+  background-color: $color-1;
+}
+
+#menu ul li {
+  display: inline-block;
+  position: relative;
+  border-right:1px solid #fff;
+  &:last-child{
+    border-right:0;
+  }
+  @include desde (web){
+    border-right:0;
+  }
+}
+
+#menu ul li > a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+#menu ul li > a > i {
+  margin-left: 15px;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.1s;
+}
+
+#menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 38px;
+  width: 200px;
+  text-align: left;
+
+}
+
+#menu ul li ul li { 
+  display: block;  
+  padding:0;     
+  border-bottom:1px solid #fff;
+}
+
+#menu ul li ul li a { display: block; }
+
+#menu ul li:hover > a { background-color: rgba(0, 0, 0, 0.03);  }
+
+#menu ul li:hover > a > i { transform: rotateZ(90deg); }
+
+#menu ul li:hover ul { display: block; }
+
+.tit{
+    background:rgba(1, 81, 84, 0.23) !important;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+}
+
+form.search-container{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-iner{
+            margin-top: 30px;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu ul li > a {
+        font-size: 1em;
+        border-right:0;
+
+    }
+    #menu ul li {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      border-bottom:1px solid #fff;
+    }
+    #menu ul li:hover ul{
+        width: 100%;
+        z-index: 99;
+    }
+    #menu ul li:hover > a { background-color: rgba(0, 0, 0, 0.3); width:100%;  }
+    form.search-container-menu{
+        display: none;
+    }
+    form.search-container{
+        display: block;
+        input[type="text"]{
+            padding:4px;
+            border: 1px solid $color-1;
+            font-size: 0.85em;
+        }
+        input[type="submit"]{
+            background: $color-1;
+            border:transparent;
+            color:#fff;
+            position: relative;
+            left: -4px;
+            padding: 4px;
+            top: 1px;
+            -webkit-appearance: none !important;
+            -webkit-border-radius: 0px 0px 0px 0px !important;
+        }
+    }
+}//media query
+
+form.search-container-menu{
+    position:absolute;
+    right: 10px;
+    bottom:12px;
+    input[type="text"]{
+        padding:4px;
+        border: none;
+        font-size: 0.85em;
+    }
+    input[type="submit"]{
+        background: $color-2;
+        border:transparent;
+        color:#fff;
+        position: relative;
+        left: -4px;
+        padding: 3px;
+        top: 1px;
+        -webkit-appearance: none !important;
+        -webkit-border-radius: 0px 0px 0px 0px !important;
+    }
+}
+
+// @media screen and (max-width: 767px) {
+
+// a#toggle { display: block; }
+
+// main#content {
+//   margin-top: 65px;
+//   transition: all ease-out 0.3s;
+// }
+
+// #menu {
+//   position: fixed;
+//   width: 250px;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   overflow-y: auto;
+//   background-color: rgba($color-1, 1);
+//   transform: translateX(-250px);
+// }
+
+// #menu ul {
+//   text-align: left;
+//   background-color: transparent;
+// }
+
+// #menu ul li { display: block; }
+
+// #menu ul li a { display: block; }
+
+// #menu ul li a > i { float: right; }
+
+// #menu ul li ul {
+//   display: none;
+//   position: static;
+//   width: 100%;
+//   background-color: rgba(22,160,133, 0.2);
+// }
+
+// #menu ul li:hover > ul { display: none; }
+
+// #menu ul li:hover > a > i { transform: rotateZ(0); }
+
+// #menu ul li.open > a { background-color: rgba(0, 0, 0, 0.3); }
+
+// #menu ul li.open > a > i { transform: rotateZ(90deg); }
+
+// #menu ul li.open > ul { display: block; }
+
+// div#overlay {
+//   display: block;
+//   visibility: hidden;
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.8);
+//   transition: all ease-out 0.3s;
+//   z-index: 1;
+//   opacity: 0;
+// }
+
+// html.open-menu { overflow: hidden; }
+
+// html.open-menu div#overlay {
+//   visibility: visible;
+//   opacity: 1;
+//   width: calc(-150%);
+//   left: 250px;
+// }
+
+// html.open-menu a#toggle,
+//  html.open-menu main#content { transform: translateX(250px); }
+
+// html.open-menu nav#menu {
+//   z-index: 3;
+//   transform: translateX(0);
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .toggleMenu {
+//     display:  none;
+//     background: #666;
+//     padding: 10px 15px;
+//     color: #fff;
+// }
+// .nav {
+//     list-style: none;
+//      *zoom: 1;
+//      background:$color-1;
+//      padding:0;
+    
+//      @include desde (base){
+//         border-radius: 0;
+//      }
+//      @include desde (tablet){
+//      border-radius: 0px;
+//      -webkit-border-radius: 0px;
+//      -moz-border-radius: 0px;
+//      -ms-border-radius: 0px;
+//      }
+//      @include desde (web){
+//      border-radius: 5px;
+//      -webkit-border-radius: 5px;
+//      -moz-border-radius: 5px;
+//      -ms-border-radius: 5px;
+//      }
+// }
+// .nav:before,
+// .nav:after {
+//     content: " "; 
+//     display: table; 
+// }
+// .nav:after {
+//     clear: both;
+// }
+// .nav ul {
+//     list-style: none;
+//     //width: 9em;
+// }
+// .nav a {
+
+//     font-size: 0.9em;
+//     padding: 10px 15px;
+//     color:#fff;
+//     text-decoration: none;
+//     @include desde (base){
+
+//         border-bottom: 1px solid rgba(255,255,255,.5);
+//     }
+//     @include desde (tablet){
+//         padding:15px;
+//         font-size: 1.1em;
+//         //margin-right: 1em;
+
+//         border-bottom: 1px solid rgba(255,255,255,.5);
+//     }
+//     @include desde (web){
+//         padding:15px;
+//         font-size: 0.9em;
+//     }
+// }
+// .nav li {
+//     position: relative;
+// }
+// .nav > li {
+//     float: left;
+//     //border-top: 1px solid #104336;
+// }
+// .nav > li ul li a ul:nth-child(n+2) { display:none; }
+// .nav > li > .parent {
+//     background-image: url("../img/downArrow.png");
+//     background-repeat: no-repeat;
+//     background-position: right;
+// }
+// .nav > li > a {
+//     display: block;
+// }
+// .nav li  ul {
+//     position: absolute;
+//     left: -9999px;
+// }
+// .nav > li.hover > ul {
+//     left: -40px;
+// }
+// .nav li li.hover ul {
+//     left: 65%;
+//     top: 0;
+
+// }
+// .nav li li a {
+//     display: block;
+//     background: #1d7a62;
+//     position: relative;
+//     z-index:100;
+//     //border-top: 1px solid #175e4c;
+// }
+// .nav li li li a {
+//     background:#249578;
+//     z-index:200;
+//     border-top: 1px solid #1d7a62;
+//     //padding: 80px;
+// }
+
+// @media screen and (max-width: 768px) {
+//     .active {
+//         display: block;
+//     }
+//     .nav > li {
+//         float: none;
+//     }
+//     .nav > li > .parent {
+//         background-position: 95% 50%;
+//     }
+//     .nav li li .parent {
+//         background-image: url("../img/downArrow.png");
+//         background-repeat: no-repeat;
+//         background-position: 95% 50%;
+//     }
+//     .nav ul {
+//         display: block;
+//         width: 100%;
+//         margin: 0;
+//         padding:0;
+//     }
+//    .nav > li.hover > ul , .nav li li.hover ul {
+//         position: static;
+//     }
+
+// }

@@ -1,0 +1,19 @@
+body{
+	background:url(../img/bac-left.png);
+	background-repeat: no-repeat;
+	@include desde (base){
+		background:none; 
+	}
+	@include desde (tablet){
+		background:url(../img/bac-left.png);
+		background-size:135%;
+		background-position:-310px 450px;
+		background-repeat: no-repeat;
+	}
+	@include desde (web){
+		background-size:contain;
+		background-size:100%;
+		background-position:-500px 550px;
+		background-repeat: no-repeat;
+	}
+}

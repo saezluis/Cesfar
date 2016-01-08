@@ -1,0 +1,154 @@
+footer{
+	width:100%;
+	height:auto;
+	#f-arriba,
+	#f-abajo{
+		width: 100%;
+	}
+
+	#f-arriba{
+		height: 123px;
+		position: relative;
+		@include desde (base){
+			display: none;
+		}
+		@include desde (web){
+			display: block;
+		}
+		#mini-logo{
+			background: url(../img/curva.png) no-repeat right;
+			height: 123px;
+		}
+		#color-l{
+			background:$color-1;
+			height: 123px;
+			p.tel-mobil {
+				color: $color-4;
+				text-align: left;
+				margin: 0;
+				font-size: 0.8em;
+				padding-left:12px;
+				background: url(../img/tel.png) no-repeat left center;
+				margin-bottom: 0.5em;
+
+				a{
+					color:$color-4;
+					text-decoration: none;
+				}
+			}
+			p.dire-mobil {
+				margin-top: 1em !important;
+				color: $color-4;
+				text-align: left;
+				margin: 0;
+				font-size: 0.8em;
+				padding-left:10px;
+				background: url(../img/pos.png) no-repeat left center;
+				margin-bottom: 0.5em;
+				a{
+					color:$color-4;
+					text-decoration: none;
+				}
+			}
+			p.mail-mail {
+				color: $color-4;
+				text-align: left;
+				margin: 0;
+				font-size: 0.8em;
+				padding-left:12px;
+				background: url(../img/mail.png) no-repeat left center;
+				margin-bottom: 0.5em;
+				a{
+					color:$color-4;
+					text-decoration: none;
+				}
+			}
+		
+		}//fincolor-l
+	}
+	#f-abajo-verde{
+		@include desde (base){
+			display: none;
+		}
+		@include desde (web){
+			display: block;
+			width: 100%;
+			height: 20px;
+			background: $color-1;
+		}
+	}
+	#f-abajo{
+		height: auto;
+		padding: 1em 0;
+		overflow: hidden;
+		background: $color-1;
+		@include desde (base){
+			display: block;
+		}
+		@include desde (web){
+			display: none;
+		}
+		.bottom-logo {
+			color:$color-4;
+			text-align: left;
+			font-size: 1.3em;
+		}
+		p{
+			color: $color-4;
+			text-align: left;
+			margin: 0;
+			font-size: 0.9em;
+		}
+		p.dire-mobil {
+			color: $color-4;
+			text-align: left;
+			margin: 0;
+			font-size: 0.8em;
+			padding-left:10px;
+			background: url(../img/pos.png) no-repeat left center;
+			margin-bottom: 0.5em;
+
+			@include desde (base){
+				display: block;
+			}
+			a{
+				color:$color-4;
+				text-decoration: none;
+			}
+		}
+		p.tel-mobil {
+			color: $color-4;
+			text-align: left;
+			margin: 0;
+			font-size: 0.8em;
+			padding-left:12px;
+			background: url(../img/tel.png) no-repeat left center;
+			margin-bottom: 0.5em;
+
+			@include desde (base){
+				display: block;
+			}
+			a{
+				color:$color-4;
+				text-decoration: none;
+			}
+		}
+		p.mail-mail {
+			color: $color-4;
+			text-align: left;
+			margin: 0;
+			font-size: 0.8em;
+			padding-left:12px;
+			background: url(../img/mail.png) no-repeat left center;
+			margin-bottom: 0.5em;
+
+			@include desde (base){
+				display: block;
+			}
+			a{
+				color:$color-4;
+				text-decoration: none;
+			}
+		}
+	}
+}

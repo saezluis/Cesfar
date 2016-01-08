@@ -1,0 +1,198 @@
+#slide{
+	text-align: center;
+	margin-top: 20px;
+	float: left;
+}
+
+#line{
+	height:10px;
+	background: $color-1; 
+	position:relative;
+	top:-5px;
+}
+
+//colums
+section{
+	article{
+
+		h1{
+			background:$color-1;
+			color: $color-4;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			border-radius: 50px;
+			padding: 10px;
+			font-size: 1.2em;
+			width: 35%;
+			text-align: center;
+			text-transform: uppercase;
+			@include desde (base){
+				width: 100%;
+			}
+			@include desde (web){
+				width: 45%;
+			}
+		}
+		#imagen--left--big{
+			@include desde (base){
+				display: none;
+			}
+			@include desde (tablet){
+				display: block;
+				
+			}
+			@include desde (web){
+				display: block;
+				
+			}
+		}
+
+		h2{
+			color:$color-1;
+			font-size: 1.2em;
+		}
+		
+		h3{
+			color:$color-gris;
+			font-size: 1.3em;
+
+		}
+
+		h3.booo{
+			margin:0;
+		}
+
+		h4{
+			color:$color-gris;
+			font-size: 1.1em;
+		}
+
+		p{
+			font-size: 1em;
+			color: $color-3;
+			font-weight: $light ;
+			//margin-top: 60px;
+			text-align:left;
+		}
+		
+		p.qf{
+			color: $color-1;
+		}
+
+		ul.lista-servicios{
+			margin:0;
+			padding:0;
+			list-style: none;
+			margin-bottom: 20px;
+			li{
+				color: $color-3;
+				background:url(../img/check.png) no-repeat left  5px;
+				padding-left:20px;
+			}
+		}
+
+		.gmaps{
+			margin-bottom: 25px;
+			display: block;
+			@include desde (base){
+				height: 300px;
+			}
+			@include desde (base){
+				height: 300px;
+			}
+			@include desde (base){
+				height: 300px;
+			}
+			@include desde (web){
+				height: 300px;
+			}
+		}
+		.data-como-llegar{
+			display: block;
+			margin-top: 20px;
+			@include desde (web){
+				margin-bottom: 35px;
+			}
+			p.ttel{
+				font-size: 1em;
+				color: $color-3;
+				font-weight: $light ;
+				//margin-top: 60px;
+				text-align:left;
+				margin-bottom: 15px;
+				a{
+					text-decoration: none;
+
+				}
+			}
+
+		}
+
+		// a.leer-mas,a.leer-menos{
+		// 	padding:10px 0;
+		// 	color:$color-1;
+		// 	text-decoration: none;
+		// 	position: relative;
+		// 	top:-20px;
+		// }
+
+		// .columns + [data-readmore-toggle] {
+		// 	@include desde (base){
+		// 		  display: block;
+		// 		  width: 100%;
+		// 	}
+		// 	@include desde (web){
+		// 		display: none;
+		// 	}
+		// }
+
+		p.columns{
+
+			font-size: 1em;
+			color: $color-3;
+			font-weight: $light ;
+			margin-top: 60px;
+			text-align:justify;
+
+			@include desde (base){
+				font-size: 0.95em;
+				margin-top: 30px;
+				text-align:left;
+				letter-spacing: 0.05em;
+				margin-bottom: 30px;
+			}
+
+			@include desde (web){
+				-webkit-column-count: 2;
+				-webkit-column-gap: 40px; 
+				-webkit-column-rule: px dotted black;
+				-moz-column-count: 2;
+				-moz-column-gap: 40px;  
+				-moz-column-rule: px dotted black;
+				column-count: 2;
+				column-gap: 40px; 
+				//column-rule: px dotted black;
+			}
+		}
+	}
+	p.resultado{
+		margin:1.33em 0;
+		color: $color-1;
+		font-size: 1.5em;
+
+	}
+	ul#--all-resultados{
+		margin:0 0 160px 0;
+		padding:0;
+		list-style: none;
+		overflow:hidden;
+		height: auto;
+
+		li{
+			background:url(../img/point.png) no-repeat left 6px !important;
+			padding-left:15px;
+			margin-bottom: 1em;
+			
+		}
+	}
+}
