@@ -107,10 +107,13 @@
         </div>
       </div>
       <div class="caja base-100 no-padding">
-        <form action="resultados-de-busqueda.html" class="search-container">
+        <form action="" method="post" class="search-container">
+			<input id="search-box" type="text" size="40" name="typeahead" value="<?php echo isset($_POST['typeahead']) ? $_POST['typeahead'] : '' ?>" class="search-box typeahead tt-query" placeholder="buscar medicamento" >
+			<!--
           <input id="search-box" type="text" name="q" placeholder="buscar medicamento" class="search-box">
+			-->
           <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
-          <input id="search-submit" type="submit" value="buscar">
+          <input id="search-submit" type="submit" value="buscar" formaction="resultados-de-busqueda.php">
         </form>
       </div>
       <div id="slide"><img src="img/banner-1.jpg" alt=""></div>

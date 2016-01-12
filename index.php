@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    
-	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     
 	<script src="tema/js/scripts.js"></script>
 	
@@ -100,7 +100,7 @@
           </nav>
 		  
           <form action="" method="post" class="search-container-menu">
-			<input id="search-box" type="text" size="40" name="typeahead" value="<?php echo isset($_POST['typeahead']) ? $_POST['typeahead'] : '' ?>" class="search-box typeahead tt-query" placeholder="buscar medicamento" >            
+			<input id="search-box" type="text" size="40" name="typeahead" value="<?php echo isset($_POST['typeahead']) ? $_POST['typeahead'] : '' ?>" class="search-box typeahead tt-query" placeholder="buscar medicamento" >
 			<!--
 			<input id="search-box" type="text" name="palabra_clave" placeholder="buscar medicamento" class="search-box">
             -->
@@ -112,11 +112,16 @@
         </div>
       </div>
       <div class="caja base-100 no-padding">
-        <form action="resultados-de-busqueda.html" class="search-container">
+	  
+        <form action="" method="post" class="search-container">
+			<input id="search-box" type="text" size="40" name="typeahead" value="<?php echo isset($_POST['typeahead']) ? $_POST['typeahead'] : '' ?>" class="search-box typeahead tt-query" placeholder="buscar medicamento" >
+			<!--
           <input id="search-box" type="text" name="q" placeholder="buscar medicamento" class="search-box">
+			-->
           <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
-          <input id="search-submit" type="submit" value="buscar">
+          <input id="search-submit" type="submit" value="buscar" formaction="resultados-de-busqueda.php">
         </form>
+		
       </div>
       <div class="caja base-100 tablet-100 no-padding">
         <div id="slide"><img src="img/pastillas.jpg" alt=""></div>
