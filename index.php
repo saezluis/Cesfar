@@ -118,7 +118,9 @@
           <input id="search-submit" type="submit" value="buscar">
         </form>
       </div>
-      <div id="slide"><img src="img/banner-1.jpg" alt=""></div>
+      <div class="caja base-100 tablet-100 no-padding">
+        <div id="slide"><img src="img/pastillas.jpg" alt=""></div>
+      </div>
     </header>
     <div id="line"></div>
     <section class="grupo">

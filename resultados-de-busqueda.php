@@ -128,7 +128,7 @@
           <input id="search-submit" type="submit" value="buscar">
         </form>
       </div>
-      <div id="slide"><img src="img/banner-1.jpg" alt=""></div>
+      <div id="slide"><img src="img/doc.jpg" alt=""></div>
     </header>
     <div id="line"></div>
     <section class="grupo">

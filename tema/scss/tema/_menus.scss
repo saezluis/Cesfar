@@ -49,6 +49,7 @@ main#content { padding: 10px; }
   margin: 0;
   padding: 5px 0;
   background-color: $color-1;
+ // border-radius: 20px;
 }
 
 #menu ul li {
@@ -149,9 +150,9 @@ form.search-container{
             border:transparent;
             color:#fff;
             position: relative;
-            left: -4px;
-            padding: 4px;
-            top: 1px;
+            // left: -4px;
+            // padding: 4px;//4px
+            // top: 1px;//1px
             -webkit-appearance: none !important;
             -webkit-border-radius: 0px 0px 0px 0px !important;
         }
@@ -161,7 +162,7 @@ form.search-container{
 form.search-container-menu{
     position:absolute;
     right: 10px;
-    bottom:12px;
+    bottom:9px;//12
     input[type="text"]{
         padding:4px;
         border: none;
@@ -172,9 +173,12 @@ form.search-container-menu{
         border:transparent;
         color:#fff;
         position: relative;
-        left: -4px;
-        padding: 3px;
-        top: 1px;
+        width: 63px;
+        height: 32px;
+        top: 5px;
+        // left: -4px;
+        // padding: 6.5px;
+        // top: 6px;
         -webkit-appearance: none !important;
         -webkit-border-radius: 0px 0px 0px 0px !important;
     }
