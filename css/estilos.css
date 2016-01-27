@@ -1885,9 +1885,15 @@ header {
   @media screen and (min-width: 320px) {
     header {
       text-align: center; } }
-  header form.search-container {
-    text-align: right;
-    margin: 10px 0 15px 0; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    header form.search-container {
+      text-align: center;
+      padding: 1em 0em 0.3em;
+      width: 100%; } }
+  @media screen and (min-width: 768px) {
+    header form.search-container {
+      text-align: right;
+      margin: 10px 0 15px 0; } }
 
 .mobile {
   display: block; }
