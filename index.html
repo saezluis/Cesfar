@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="tema/js/scripts.js"></script>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/typeahead.min.js"></script>
-	<script src="js/tipeo.js"></script>  
-	
-	
   </head>
   <body>
     <div id="bar" class="grupo total"></div>
@@ -27,7 +20,7 @@
           <div id="overlay"></div>
           <nav id="menu">
             <ul>
-              <li><a href="index.html">Quiénes Somos</a></li>
+              <li><a id="scroll" href="index.html">Quiénes Somos</a></li>
               <li><a href="#">Sucursales</a>
                 <ul>
                   <li><a href="#" class="tit">Santiago</a></li>
@@ -43,13 +36,11 @@
               <li><a href="cotizacion.html">Cotización</a></li>
             </ul>
           </nav>
-		  
-          <form action="resultados-de-busqueda.php" method="post" class="search-container-menu">
-            <input id="search-box" type="text" name="palabra_clave" placeholder="buscar medicamento" class="search-box">
+          <form action="resultados-de-busqueda.html" class="search-container-menu">
+            <input id="search-box" type="text" name="q" placeholder="buscar medicamento" class="search-box">
             <label for="search-box"></label><span class="glyphicon glyphicon-search search-icon"></span>
             <input id="search-submit" type="submit" value="buscar">
           </form>
-		  
           <div class="clear"></div>
         </div>
       </div>

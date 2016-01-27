@@ -1889,6 +1889,9 @@ header {
     text-align: right;
     margin: 10px 0 15px 0; }
 
+.mobile {
+  display: block; }
+
 footer {
   width: 100%;
   height: auto; }
