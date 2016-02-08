@@ -125,12 +125,12 @@
           <h1>Sucursales</h1>
           <h3 class="booo">Cesfar Vitacura</h3>
           <p class="qf">Q.F. Mónica Hernández</p>
-          <p>
+          <p><!--
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
             sed risus id tortor dictum imperdiet nec et elit. Suspendisse potenti.
             Maecenas vitae urna turpis. Integer vitae mauris quis purus 
             elementum ullamcorper nec a est. Phasellus arcu nisl, congue ut 
-            augue et, molestie auctor sapien.
+            augue et, molestie auctor sapien.-->
           </p>
           <h3>Servicios</h3>
           <ul class="lista-servicios">

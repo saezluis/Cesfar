@@ -43,7 +43,7 @@
 	//montar aviso de notificacion al usuario
 	
 	$user = $email;
-	$usersubject = "Cotización pagina web Cesfar (www. .cl)";
+	$usersubject = "Cotización pagina web Cesfar (www.cesfar.cl)";
 	$userheaders = "De: cotizaciones@cesfar.cl ";  //OJO ver que email de retorno para el usuario colocar aqui
 	$usermessage = "Hemos recibido su cotización, la misma será enviada en el transcurso de las proximas 24 horas.";
 		
