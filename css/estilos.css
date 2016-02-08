@@ -1622,6 +1622,38 @@ h5 {
 h6 {
   font-size: 0.8em; }
 
+.noBackground {
+  background: none; }
+
+p.agra {
+  text-transform: uppercase;
+  text-align: center;
+  color: #00abb2;
+  padding: 25px; }
+  @media screen and (min-width: 768px) {
+    p.agra {
+      width: 45%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1400px) {
+    p.agra {
+      width: 27%; } }
+
+a.back {
+  background: #00abb2;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 40%;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    a.back {
+      width: 12%; } }
+
 article.fondo form#coti {
   width: 100%;
   height: auto;

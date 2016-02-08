@@ -1,3 +1,37 @@
+.noBackground{
+	background: none;
+}
+p.agra{
+	text-transform: uppercase;
+	text-align: center;
+	color: $color-1;
+	padding: 25px;
+	@include desde (tablet){
+		width: 45%;
+		margin: 0 auto;
+	}
+	@include desde (hd){
+		width: 27%;
+	}
+}
+
+a.back{
+	background: #00abb2;
+	color: #fff;
+	border-radius: 50px;
+	padding: 10px 15px;
+	font-size: 1em;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 40%;
+	display: block;
+	@include desde (tablet){
+		width: 12%;
+	}
+}
+
 article.fondo{
 	form#coti{
 		width: 100%;
